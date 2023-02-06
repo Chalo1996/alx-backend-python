@@ -16,6 +16,4 @@ def task_wait_random(max_delay: int) -> object:
     Returns:
         task: a coroutine task
     """
-    task = asyncio.Task(wait_random(max_delay))
-
-    return task
+    return (asyncio.Task(wait_random(max_delay)))
