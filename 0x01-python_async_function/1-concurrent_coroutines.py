@@ -6,8 +6,6 @@ import asyncio
 from typing import List
 wait_random = __import__('0-basic_async_syntax').wait_random
 
-delaysLst: list = list()
-
 
 async def wait_n(n: int, max_delay: int) -> List[float]:
     """
@@ -21,6 +19,7 @@ async def wait_n(n: int, max_delay: int) -> List[float]:
     Returns:
         List[float]: A list of sorted floats returned for every routine call.
     """
+    delaysLst: list = list()
     for i in range(n):
         if max_delay == 0:
             delaysLst.append(0.0)
