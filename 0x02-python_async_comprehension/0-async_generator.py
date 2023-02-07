@@ -6,7 +6,7 @@ import asyncio
 from typing import AsyncGenerator
 
 
-async def async_generator() -> AsyncGenerator[float, None]:
+async def async_generator() -> AsyncGenerator[int, None]:
     """
     async_generator: Generates a generator of integers.
 
