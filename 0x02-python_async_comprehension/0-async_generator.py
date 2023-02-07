@@ -10,6 +10,9 @@ async def async_generator() -> AsyncGenerator[float, None]:
     """
     async_generator: Generates a generator of integers.
 
+    Args:
+        None.
+
     Yields:
         Generator[int, None, None]: A random number through every loop.
     """
