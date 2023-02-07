@@ -3,10 +3,10 @@
 
 import random
 import asyncio
-from typing import AsyncGenerator
+from typing import Iterator
 
 
-async def async_generator() -> AsyncGenerator[float, None]:
+async def async_generator() -> Iterator[float]:
     """
     async_generator: Generates a generator of integers.
 
